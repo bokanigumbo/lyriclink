@@ -3,6 +3,9 @@
 **lyriclink** is a mood-based song explorer powered by AI and spotify.  
 just type how you feel (heartbreak, hype, chill etc) and press play.
 
+here's the running link: 
+https://jq5k9p-3000.csb.app/ 
+
 ## 🚀 features
 - 🔍 search for songs by mood
 - 🔁 shuffle results
@@ -20,3 +23,5 @@ just type how you feel (heartbreak, hype, chill etc) and press play.
 - AI mood detection from text or images
 - spotify playlist export
 - real-time trending moods
+
+
