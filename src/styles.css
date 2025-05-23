@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(-45deg, #0f9d58, #1b5e20, #004d40, #000000);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header {
+  background-color: #fff;
+  color: #0f9d58;
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.subheading {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+button {
+  padding: 0.75rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  border: none;
+  background-color: #1db954;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 0 12px rgba(30, 215, 96, 0.4);
+}
+
+button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.detect-btn {
+  background-color: #ffcc00;
+  color: #222;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.shuffle-btn {
+  margin-top: 1rem;
+  background-color: #292929;
+  color: #fff;
+  border: 2px solid #1db954;
+}
+
+.save-vibe-btn {
+  background-color: #fff;
+  color: #1db954;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  border: 2px solid #1db954;
+  cursor: pointer;
+}
+
+.save-vibe-btn:hover {
+  background-color: #1db954;
+  color: white;
+}
+
+.trending {
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.trending button {
+  margin: 0 0.5rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.trending button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.song-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+  transform: scale(1.02);
+}
+
+.song-card img {
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.song-card iframe {
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.loading,
+.empty-state {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+.saved-vibes {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.saved-vibe-card {
+  margin: 0.5rem auto;
+}
+
+.saved-vibe-card button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.saved-vibe-card button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
